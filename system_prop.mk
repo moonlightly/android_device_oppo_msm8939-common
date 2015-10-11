@@ -30,7 +30,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    ro.telephony.default_network=9 \
+    ril.subscription.types=NV,RUIM \
+    telephony.lteOnCdmaDevice=1 \
+    ro.rf_version=TDD_FDD_Ch_A_15020 \
+    ro.telephony.default_network=20,1 \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.sib16_support=1 \
     persist.radio.multisim.config=dsds
