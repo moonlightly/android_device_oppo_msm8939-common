@@ -96,6 +96,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8916 \
+    libshim_camera \
+    libboringssl-compat \
+    libstlport
+
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -159,19 +167,15 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.oppo.rc \
     init.oppo.usb.rc \
-    init.qcom.class_core.sh \
-    init.qcom.early_boot.sh \
     init.qcom-common.rc \
-    init.qcom.sh \
     init.qcom.power.rc \
-    init.qcom.ssr.sh \
-    init.qcom.usb.sh \
     init.target.rc \
     ueventd.qcom.rc
 
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
+    libshim_parcel \
     libxml2
 
 # Wifi

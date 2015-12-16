@@ -87,6 +87,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
+QCOM_BT_USE_BTNV := true
 
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
@@ -133,6 +134,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+
+# Touchscreen
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
