@@ -36,12 +36,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM \
     telephony.lteOnCdmaDevice=1 \
     ro.rf_version=TDD_FDD_Ch_A_15020 \
+    ro.telephony.call_ring.multiple=false \
     ro.telephony.default_network=20,1 \
     ro.telephony.ril.config=simactivation \
     persist.radio.force_on_dc=true \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.sib16_support=1 \
     persist.radio.multisim.config=dsds
+
+# WIFI
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0
 
 # QC vendor extension
 PRODUCT_PROPERTY_OVERRIDES += \
