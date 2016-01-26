@@ -97,8 +97,8 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libshim_camera \
     libboringssl-compat \
-    libstlport
-
+    libstlport \
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
+    librmnetctl \
     libshim_parcel \
     libxml2
 
